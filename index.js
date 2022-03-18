@@ -5,7 +5,7 @@ window.addEventListener('deviceorientation', (ev) => {
   const beta = ev.beta;
   const gamma = ev.gamma;
 
-  if (beta > 20 && beta < 40) {
+  if (beta > 10 && beta < 20) {
     iridiscenceEl.className = 'pink';
   } else if (beta < 0 && gamma > 0) {
     iridiscenceEl.className = 'red';
@@ -17,9 +17,9 @@ window.addEventListener('deviceorientation', (ev) => {
     iridiscenceEl.className = 'yellow';
   }
 
-  iridiscenceEl.textContent = `beta : ${beta}\n`;
-  iridiscenceEl.textContent += `alpha: ${alpha}\n`;
-  iridiscenceEl.textContent += `gamma: ${gamma}\n`;
+  iridiscenceEl.innerHTML = `beta : ${beta}\n`;
+  iridiscenceEl.innerHTML += `alpha: ${alpha}\n`;
+  iridiscenceEl.innerHTML += `gamma: ${gamma}\n`;
 });
 
 window.addEventListener('deviceemotion', (ev) => {
