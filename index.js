@@ -17,9 +17,9 @@ window.addEventListener('deviceorientation', (ev) => {
     iridiscenceEl.className = 'yellow';
   }
 
-  iridiscenceEl.innerHTML = `beta : ${beta}\n`;
-  iridiscenceEl.innerHTML += `alpha: ${alpha}\n`;
-  iridiscenceEl.innerHTML += `gamma: ${gamma}\n`;
+  iridiscenceEl.innerHTML = `<span> beta : ${beta} </span><br>`;
+  iridiscenceEl.innerHTML += `<span> alpha: ${alpha} </span><br>`;
+  iridiscenceEl.innerHTML += `<span> gamma: ${gamma} </span>`;
 });
 
 window.addEventListener('deviceemotion', (ev) => {
