@@ -23,8 +23,6 @@ window.addEventListener('deviceorientation', (ev) => {
    <span> alpha: ${alpha} </span>
    <br>
    <span> gamma: ${gamma} </span>
-   <br>
-   <span> mareo, desmayo, desfallecimiento, vahído, <br> síncope, indisposición, marear,cansar,<br> fastidiar, aturdir, molestar, <br> agobiar, importunar, incomodar, impacientar </span>
   `;
 });
 
