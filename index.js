@@ -17,9 +17,15 @@ window.addEventListener('deviceorientation', (ev) => {
     iridiscenceEl.className = 'yellow';
   }
 
-  iridiscenceEl.innerHTML = `<span> beta : ${beta} </span><br>`;
-  iridiscenceEl.innerHTML += `<span> alpha: ${alpha} </span><br>`;
-  iridiscenceEl.innerHTML += `<span> gamma: ${gamma} </span>`;
+  iridiscenceEl.innerHTML = `
+   <span> beta: ${beta} </span>
+   <br>
+   <span> alpha: ${alpha} </span>
+   <br>
+   <span> gamma: ${gamma} </span>
+   <br>
+   <span> mareo, desmayo, desfallecimiento, vahído, <br> síncope, indisposición, marear,cansar,<br> fastidiar, aturdir, molestar, <br> agobiar, importunar, incomodar, impacientar </span>
+  `;
 });
 
 window.addEventListener('deviceemotion', (ev) => {
