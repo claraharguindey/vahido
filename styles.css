@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+}
+
+#iridiscence {
+  height: 100vh;
+  width: 100vw;
+}
+
+.pink {
+  background-color: pink;
+}
+
+.red {
+  background-color: #ff3333;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.aqua {
+  background-color: #83ffb8;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.orange {
+  background-color: #ffc383;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
+
+.yellow {
+  background-color: #faff83;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
+}
