@@ -1,5 +1,6 @@
 body {
   margin: 0;
+  font-family: 'sans-serif';
 }
 
 #iridiscence {
@@ -9,6 +10,9 @@ body {
 
 .pink {
   background-color: pink;
+  -webkit-transition: background-color 1000ms linear;
+  -ms-transition: background-color 1000ms linear;
+  transition: background-color 1000ms linear;
 }
 
 .red {

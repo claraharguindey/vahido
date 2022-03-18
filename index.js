@@ -1,8 +1,6 @@
 const iridiscenceEl = document.getElementById('iridiscence');
-const output = document.getElementById('output');
 
 window.addEventListener('deviceorientation', (ev) => {
-  console.log({ algha: ev.alpha, beta: ev.beta, gamma: ev.gamma });
   const alpha = ev.alpha;
   const beta = ev.beta;
   const gamma = ev.gamma;
@@ -19,9 +17,9 @@ window.addEventListener('deviceorientation', (ev) => {
     iridiscenceEl.className = 'yellow';
   }
 
-  output.textContent = `beta : ${beta}\n`;
-  output.textContent += `alpha: ${alpha}\n`;
-  output.textContent += `gamma: ${gamma}\n`;
+  iridiscenceEl.textContent = `beta : ${beta}\n`;
+  iridiscenceEl.textContent += `alpha: ${alpha}\n`;
+  iridiscenceEl.textContent += `gamma: ${gamma}\n`;
 });
 
 window.addEventListener('deviceemotion', (ev) => {
