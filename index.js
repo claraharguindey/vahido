@@ -26,3 +26,11 @@ function getOrientation() {
       `;
   });
 }
+
+DeviceOrientationEvent.requestPermission()
+  .then((response) => {
+    if (response == 'granted') {
+      getOrientation();
+    }
+  })
+  .catch(console.error);
