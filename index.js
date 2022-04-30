@@ -1,6 +1,6 @@
 const iridiscenceEl = document.getElementById('iridiscence');
 
-const updateColors = (ev) => {
+window.addEventListener('deviceorientation', (ev) => {
   const alpha = ev.alpha;
   const beta = ev.beta;
   const gamma = ev.gamma;
@@ -18,22 +18,17 @@ const updateColors = (ev) => {
   }
 
   iridiscenceEl.innerHTML = `
- <span> beta: ${beta} </span>
- <br>
- <span> alpha: ${alpha} </span>
- <br>
- <span> gamma: ${gamma} </span>
-`;
-};
+   <span> beta: ${beta} </span>
+   <br>
+   <span> alpha: ${alpha} </span>
+   <br>
+   <span> gamma: ${gamma} </span>
+  `;
+});
 
-window.addEventListener('deviceorientation', (event) => updateColors(event));
-
-DeviceOrientationEvent.requestPermission()
-  .then((response) => {
-    if (response == 'granted') {
-      window.addEventListener('deviceorientation', (event) =>
-        updateColors(event)
-      );
-    }
-  })
-  .catch(console.error);
+window.addEventListener('deviceemotion', (ev) => {
+  console.log({
+    acceleration: ev.acceleration.y,
+    rotation: ev.rotationRate.gamma,
+  });
+});
