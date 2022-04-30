@@ -27,6 +27,8 @@ function getOrientation() {
   });
 }
 
+getOrientation();
+
 DeviceOrientationEvent.requestPermission()
   .then((response) => {
     if (response == 'granted') {
