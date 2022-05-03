@@ -42,3 +42,9 @@ body {
   -ms-transition: background-color 1000ms linear;
   transition: background-color 1000ms linear;
 }
+
+#accelPermsButton {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+}
