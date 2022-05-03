@@ -22,7 +22,7 @@ body {
   transition: background-color 1000ms linear;
 }
 
-.aqua {
+.blue {
   background-color: #83ffb8;
   -webkit-transition: background-color 1000ms linear;
   -ms-transition: background-color 1000ms linear;

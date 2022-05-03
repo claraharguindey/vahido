@@ -11,20 +11,12 @@ window.addEventListener('deviceorientation', (ev) => {
   } else if (beta < 0 && gamma > 0) {
     iridiscenceEl.className = 'red';
   } else if (beta < 0 && gamma < 0) {
-    iridiscenceEl.className = 'aqua';
+    iridiscenceEl.className = 'yellow';
   } else if (beta > 0 && gamma > 0) {
     iridiscenceEl.className = 'orange';
   } else if (beta > 0 && gamma < 0) {
-    iridiscenceEl.className = 'yellow';
+    iridiscenceEl.className = 'blue';
   }
-
-  // iridiscenceEl.innerHTML = `
-  //  <span> beta: ${beta} </span>
-  //  <br>
-  //  <span> alpha: ${alpha} </span>
-  //  <br>
-  //  <span> gamma: ${gamma} </span>
-  // `;
 });
 
 window.addEventListener('deviceemotion', (ev) => {
@@ -48,11 +40,11 @@ function getAccel() {
         } else if (beta < 0 && gamma > 0) {
           iridiscenceEl.className = 'red';
         } else if (beta < 0 && gamma < 0) {
-          iridiscenceEl.className = 'aqua';
+          iridiscenceEl.className = 'yellow';
         } else if (beta > 0 && gamma > 0) {
           iridiscenceEl.className = 'orange';
         } else if (beta > 0 && gamma < 0) {
-          iridiscenceEl.className = 'yellow';
+          iridiscenceEl.className = 'blue';
         }
       });
     }
